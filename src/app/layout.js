@@ -30,8 +30,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script
+          strategy="lazyOnload"
+          onLoad={() => {
+            console.log('Script loaded correctly');
+          }}
+          type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+          strategy="lazyOnload"
+          onLoad={() => {
+            console.log('Script loaded correctly');
+          }}
+          nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       </head>
       <body
         className={`${montserrat.className} antialiased`}
