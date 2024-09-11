@@ -36,18 +36,6 @@ export default function RootLayout({ children }) {
         <footer className="text-center p-3 bg-blue-300 text-lg font-bold">
           <p className="text-black">Copyright&copy; 2024. Help Save Luna💗</p>
         </footer>
-        <script
-          strategy="lazyOnload"
-          onLoad={() => {
-            console.log('Script loaded correctly');
-          }}
-          type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script
-          strategy="lazyOnload"
-          onLoad={() => {
-            console.log('Script loaded correctly');
-          }}
-          nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
       </body>
     </html>
   );
