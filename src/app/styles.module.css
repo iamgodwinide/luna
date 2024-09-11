@@ -1,0 +1,269 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/bg-2.jpg);
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation-name: zoomIn;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004b;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 6em;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+    max-width: 12em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.content p {
+    font-size: 1.7em;
+    color: #fff;
+    margin: 2em 0;
+    text-align: center;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.actionbtn {
+    color: #fff;
+    background-color: #00a6fb;
+    padding: 1em 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.links {
+    position: absolute;
+    left: 3em;
+    top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2em;
+}
+
+.lineImage {
+    width: 200vw;
+    overflow: hidden !important;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.uprig {
+    width: 100%;
+    margin-left: -5%;
+    height: 100%;
+}
+
+.arrowDown {
+    font-size: 3em;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    animation-name: upanddown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+.whysection {
+    background-color: #fff;
+    display: flex;
+    gap: 10em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home p {
+    font-size: 1.4em;
+}
+
+.home h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: .7em;
+}
+
+.whycontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5em;
+}
+
+.whycontent p {
+    color: #000000;
+}
+
+.whyimage {
+    width: 40%;
+    height: 20em;
+    background-image: url(/bg-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.whytext {
+    width: 60%;
+}
+
+
+@keyframes upanddown {
+    from {
+        bottom: 1em
+    }
+
+    to {
+        bottom: 1.5em;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    @keyframes zoomIn {
+        from {
+            background-position: 0%;
+            background-size: 200%;
+        }
+
+        to {
+            background-position: 50%;
+            background-size: 250%;
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        height: 100vh;
+    }
+
+    .lineImage {
+        width: 100vw;
+        height: 8em;
+    }
+
+    .lineImage img {
+        width: 100vw;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content p {
+        font-size: 1em;
+        color: #fff;
+        margin: 1em 0;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .actionbtn {
+        padding: 1em 2em;
+        font-size: 1em;
+    }
+
+    .whysection {
+        gap: 5em;
+        padding: 0em 1em;
+    }
+
+    .whycontent {
+        gap: 5em;
+        flex-direction: column;
+    }
+
+    .whyimage {
+        width: 100%;
+    }
+
+    .whytext {
+        width: 100%;
+    }
+
+    .home h2 {
+        font-size: 1.5em;
+    }
+
+    .home p {
+        font-size: 1.1em;
+    }
+
+    @keyframes zoomIn {
+        from {
+            background-position: 0%;
+        }
+
+        to {
+            background-position: 60%;
+        }
+
+    }
+
+
+
+
+
+}

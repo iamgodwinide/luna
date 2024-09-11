@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #fff;
+  overflow-x: hidden !important;
+}
+
+/* Default for mobile devices */
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Tablets (min-width: 600px) */
+@media (min-width: 600px) {
+  .container {
+    margin: 0 auto;
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+/* Small laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px;
+  }
+}
+
+/* Large laptops and desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    margin: 0 auto;
+    width: 70%;
+    padding: 50px;
+  }
+}
+
+/* Larger screens (min-width: 1440px) */
+@media (min-width: 1440px) {
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 60px;
+  }
+}
